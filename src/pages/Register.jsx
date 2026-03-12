@@ -16,13 +16,13 @@ function Register() {
       const response = await API.post("/users/signup", { name, email, password });
       const { id, name: userName } = response.data;
 
-      // Save user info in localStorage
+      
       localStorage.setItem("userId", id);
       localStorage.setItem("userName", userName);
 
-      // Redirect to dashboard
+     
       navigate("/dashboard");
-    } catch (err) {
+    } catch {
       setError("Signup failed. Email may already be in use.");
     }
   };

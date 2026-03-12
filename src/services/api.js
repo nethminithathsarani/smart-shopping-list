@@ -8,7 +8,7 @@ const API = axios.create({
 
 
 
-// Fetch items for a specific user
+
 export const getItems = (userId) => API.get(`/items/user/${userId}`);
 export const addItem = (userId, item) => API.post(`/items/user/${userId}`, item);
 export const updateItem = (userId, itemId, item) =>

@@ -7,7 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Items from "./pages/Items";
 
 function App() {
-  const userId = localStorage.getItem("userId");  // Check if user is logged in
+  const userId = localStorage.getItem("userId");  
 
   return (
     <Router>
